@@ -57,12 +57,19 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/*Hero image*/
+/*Hero image and cover text*/
 
-#hero-outer {
+#hero-outer {   /*ставим для анімаціі розмір батьківського блока*/
     height: 600px;
     width: 100%;
-    overflow: hidden; /*and yor can use too: clear: both;*/    
+    overflow: hidden; /*and yor can use too: clear: both;*/  
+    
+    position: relative; /*вказує, що відносно зображення вирівнювати червоний фон з написом*/
+}
+
+#cover-text, #cover-text h2 {
+    color:#fff; 
+    padding: 10px;
 }
 
 #hero-image {
@@ -85,4 +92,21 @@ h1, h2 {
     to{
         transform: scale(1.1);
     }
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
 }
