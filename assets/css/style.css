@@ -16,10 +16,10 @@ body {
 /*headings and logo*/
 
 h1, h2 {
-    font-family: Oswald, sans serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #252525
+    color: #252525;
 }
 
 #logo {
@@ -54,5 +54,35 @@ h1, h2 {
 }
 
 .active {
-    border-bottom: 1px solid #3a3a3a
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/*Hero image*/
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden; /*and yor can use too: clear: both;*/    
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero-image.webp') no-repeat center center;  
+    
+    /*animates zoom affect of loading page*/
+    animation-name: hero-zoom;
+    animation-duration: 5s;         /*тривалість анімації*/                            
+    animation-fill-mode: forwards; /*Зберігаємо стан анімації в останньому кадрі*/
+}
+
+/*Create the level of zoom for hero image*/
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
 }
