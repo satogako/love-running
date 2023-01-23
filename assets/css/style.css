@@ -33,6 +33,9 @@ h1, h2 {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
+    display: flex;
+    flex-direction: row;
+    float: right;
 }
 
 #menu, #logo {
@@ -40,7 +43,6 @@ h1, h2 {
 }
 
 #menu li {
-    float: right;
     list-style-type: none;
     margin-right: 30px;
 }
